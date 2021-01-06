@@ -85,8 +85,7 @@ app.use('/contacts', graphqlHTTP({
 
 
 
-
-app.listen(9000, function() {
+app.listen(process.env.PORT || 9000, function() {
 
     console.log("connected");
 });
